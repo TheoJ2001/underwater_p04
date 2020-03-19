@@ -1,3 +1,12 @@
+@font-face {
+  font-family: Bebas-Kai;
+  src: url("fonts/bebas_kai/BebasKai.otf") format("otf"),
+       url("fonts/bebas_kai/BebasKai.ttf") format("ttf"),
+       url("fonts/bebas_kai/BebasKai.woff") format("woff"),
+       url("fonts/bebas_kai/BebasKai.woff2") format("woff2");
+}
+
+
 body{
   overflow: hidden;
   box-sizing: border-box;
@@ -7,7 +16,6 @@ body{
 }
 
 main{
-  box-sizing: border-box;
   width: 100%;
   background: rgb(255, 255, 255) fixed;
   font-family: Verdana, sans-serif;
@@ -15,8 +23,8 @@ main{
 
 header{
   z-index: 10;
-  position: sticky;
   box-sizing: border-box;
+  position: sticky;
   width: 100vw;
   height: 5rem;
   background-color: rgb(0, 0, 145);
@@ -27,7 +35,8 @@ header{
 }
 
 header h1{
-  padding-top: 1.75rem;
+  padding: 1.75rem;
+
 }
 
 section{
@@ -42,7 +51,7 @@ article{
 
 #content{
   z-index: 2;
-  overflow: scroll;
+  overflow-y: scroll;
   position: relative;
   width: 70vw;
   height: 85vh;
@@ -54,4 +63,26 @@ article{
 
 #content article img{
   width: 100%;
+}
+
+footer{
+  display: flex;
+  overflow: hidden;
+  width: 100vw;
+  height: 5rem;
+  background-color: rgb(145, 0, 0);
+  font-family: Bebas-Kai, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+#ftr-left{
+  flex: 1;
+  width: 50vw;
+
+}
+
+#ftr-right{
+  width: 50vw;
 }
