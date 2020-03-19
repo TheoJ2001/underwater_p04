@@ -1,0 +1,57 @@
+body{
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 110vh;
+  margin: 0;
+}
+
+main{
+  box-sizing: border-box;
+  width: 100%;
+  background: rgb(255, 255, 255) fixed;
+  font-family: Verdana, sans-serif;
+}
+
+header{
+  z-index: 10;
+  position: sticky;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 5rem;
+  background-color: rgb(0, 0, 145);
+  font-family: Bebas-Kai, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+header h1{
+  padding-top: 1.75rem;
+}
+
+section{
+  align-items: center;
+  font-size: 1.2em;
+  color: rgb(255, 255, 255);
+}
+
+article{
+  padding: 1rem;
+}
+
+#content{
+  z-index: 2;
+  overflow: scroll;
+  position: relative;
+  width: 70vw;
+  height: 85vh;
+  left: 15%;
+  right: 15%;
+  background-image: linear-gradient(rgb(0, 0, 145), rgb(145, 0, 0));
+
+}
+
+#content article img{
+  width: 100%;
+}
